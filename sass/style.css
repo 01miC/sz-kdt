@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'GothamBold';
+  src: url("../fonts/GothamRounded-Bold.eot");
+  src: url("../fonts/GothamRounded-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamRounded-Bold.woff2") format("woff2"), url("../fonts/GothamRounded-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
