@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,800');
  
  * { 
      box-sizing: border-box;
@@ -106,3 +107,87 @@
     height: 100%;
     z-index:99;
  }
+
+ //end of index.html
+ h6 {
+    font-family:'Roboto';  
+    font-weight: 200;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+  h1 {
+    font-family: 'Raleway';
+    font-weight: 800 !important;
+    text-transform: uppercase;
+  }
+  
+ .transparent {
+    background-color: transparent;
+    padding: 0;
+  }
+  .navbar-brand {
+    img {
+        max-height:120px;
+        margin-left: 200px;
+    }
+  }
+
+  .nav-item {
+      &:hover {
+          background-color: rgba(0, 21, 112, 0.062)
+      }
+  }
+
+  .menu-margin-right {
+      margin-right:50px;
+  }
+
+  .jumbotron {
+      padding:0;
+      background:url(../images/jumbo_bg.png) no-repeat;
+      background-position: center center;
+      background-size:cover;
+      height:100vh;
+  }
+  .jumbotron-content {
+      width:55%;
+      height:100vh;
+      font-family:'Roboto';
+      padding-right:70px;
+      
+      button {
+          border:5px solid #1b325d;
+          background: transparent;
+          padding: 5px 30px;
+          font-family: 'Raleway';
+          font-weight:800;
+          color:#1b325d;
+          cursor: pointer;
+          &:hover {
+              background-color: #1b325d;
+              color:#fff;
+              transition: all 0.1s ease-in-out;
+          }
+          &:active {
+              border:4px solid #1b325d;
+              margin-left:1px;
+          }
+      }
+
+  }
+
+  .rekrutacjacontent {
+      width:70%;
+      margin:0 auto;
+      h6 {
+          margin-top:200px;
+      }
+  }
+
+
+.z-0 {
+    z-index: 0;
+}
+  .z-99 {
+      z-index:99;
+  }
