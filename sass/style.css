@@ -25,7 +25,7 @@ body {
 }
 
 .bg-tech {
-  background: url(https://images.pexels.com/photos/7374/startup-photos.jpg);
+  background: url("https://images.pexels.com/photos/7374/startup-photos.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -72,10 +72,6 @@ body {
   padding-right: 100px;
   font-family: 'Roboto';
   font-weight: 400;
-}
-
-.navi .navi-tech a {
-  color: #313131;
 }
 
 .navi img {

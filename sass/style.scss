@@ -25,7 +25,7 @@
     z-index:10;
  }
  .bg-tech {
-    background: url(https://images.pexels.com/photos/7374/startup-photos.jpg);
+    background: url('https://images.pexels.com/photos/7374/startup-photos.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size:cover;
@@ -65,9 +65,6 @@
             padding-right:100px;
             font-family:'Roboto';
             font-weight: 400;
-        }
-        a {
-            color:rgb(49, 49, 49);
         }
     }
     img {
