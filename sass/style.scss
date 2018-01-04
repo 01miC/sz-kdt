@@ -16,3 +16,15 @@
      margin:0 ;
      padding:0;
  }
+
+ .container-fluid {
+     height:100vh;
+ }
+
+ .navi {
+    background-image: url(../images/start-left.jpg), url(../images/start-right.jpg);
+    background-position: left center, right center;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100vh;
+ }
