@@ -12,14 +12,6 @@ body {
   height: 100vh;
 }
 
-.z-0 {
-  z-index: 0;
-}
-
-.z-1 {
-  z-index: 1;
-}
-
 .bg-lo {
   background: url(../images/start-left.jpg);
   background-position: center center;
@@ -29,10 +21,11 @@ body {
   position: absolute;
   left: 0px;
   height: 100%;
+  z-index: 10;
 }
 
 .bg-tech {
-  background: url(https://images.pexels.com/photos/267507/pexels-photo-267507.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb);
+  background: url(https://images.pexels.com/photos/7374/startup-photos.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -40,6 +33,7 @@ body {
   position: absolute;
   right: 0px;
   height: 100%;
+  z-index: 10;
 }
 
 .navi {
@@ -49,8 +43,8 @@ body {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.897);
   height: 100px;
+  z-index: 15;
 }
 
 .navi .navi-lo {
@@ -65,6 +59,10 @@ body {
   font-weight: 400;
 }
 
+.navi .navi-lo a {
+  color: #313131;
+}
+
 .navi .navi-tech {
   float: right;
 }
@@ -77,6 +75,10 @@ body {
   font-weight: 400;
 }
 
+.navi .navi-tech a {
+  color: #313131;
+}
+
 .navi img {
   max-height: 200px;
   position: absolute;
@@ -84,4 +86,37 @@ body {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  z-index: 99;
+}
+
+.navi-container-left {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.897);
+}
+
+.navi-container-right {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.897);
+}
+
+#js-left {
+  width: 50%;
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  z-index: 99;
+}
+
+#js-right {
+  width: 50%;
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  z-index: 99;
 }
