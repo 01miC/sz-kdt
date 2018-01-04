@@ -1,11 +1,4 @@
-@font-face {
-  font-family: 'GothamBold';
-  src: url("../fonts/GothamRounded-Bold.eot");
-  src: url("../fonts/GothamRounded-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamRounded-Bold.woff2") format("woff2"), url("../fonts/GothamRounded-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
-
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
 * {
   box-sizing: border-box;
 }
@@ -19,10 +12,74 @@ body {
   height: 100vh;
 }
 
-.navi {
-  background-image: url(../images/start-left.jpg), url(../images/start-right.jpg);
-  background-position: left center, right center;
+.z-0 {
+  z-index: 0;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.bg-lo {
+  background: url(../images/start-left.jpg);
+  background-position: center center;
   background-repeat: no-repeat;
+  background-size: cover;
   width: 50%;
-  height: 100vh;
+  position: absolute;
+  left: 0px;
+  height: 100%;
+}
+
+.bg-tech {
+  background: url(https://images.pexels.com/photos/267507/pexels-photo-267507.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  position: absolute;
+  right: 0px;
+  height: 100%;
+}
+
+.navi {
+  width: 70%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.897);
+  height: 100px;
+}
+
+.navi .navi-lo {
+  float: left;
+}
+
+.navi .navi-lo h2 {
+  font-size: 1.7rem;
+  line-height: 100px;
+  padding-left: 50px;
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+
+.navi .navi-tech {
+  float: right;
+}
+
+.navi .navi-tech h2 {
+  font-size: 1.7rem;
+  line-height: 100px;
+  padding-right: 100px;
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+
+.navi img {
+  max-height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
