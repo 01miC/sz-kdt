@@ -6,15 +6,22 @@ var bgTech = document.getElementById('js-bg-tech');
 var menu = document.getElementById('js-menu');
 var leftSide = document.getElementById('js-left');
 var rightSide = document.getElementById('js-right');
+var loText=document.getElementById('js-lo-text');
+var techText = document.getElementById('js-tech-text');
+
 
 leftSide.addEventListener("mouseover", function(e) {
     bgLo.style.width = "60%";
-    bgLo.style.transition = "all 0.5s ease-in"; 
+    bgLo.style.transition = "all 0.2s ease-in"; 
     bgLo.style.zIndex = "11";  
     menuLo.style.height = "55vh"; 
     menuLo.style.width = "64.3%";
-    menuLo.style.transition = "all 0.5s ease-in"; 
+    menuLo.style.transition = "all 0.2s ease-in 0.2s"; 
     bgTech.style.filter =  "grayscale(200%)";
+    loText.style.display = "block";
+    loText.style.opacity = "1";
+    loText.style.transition = "all 0.5s ease-in";
+
 }); 
 
 leftSide.addEventListener("mouseleave", function(e) {
@@ -25,16 +32,22 @@ leftSide.addEventListener("mouseleave", function(e) {
     menuLo.style.width = "50%";
     menuLo.style.transition = "all 0.5s ease-in"; 
     bgTech.style.filter =  "grayscale(0%)";
+    loText.style.display = "none";
+    loText.style.opacity = "0";
+    loText.style.transition = "all 0.5s ease-in";
 });
 
 rightSide.addEventListener("mouseover", function(e) {
     bgTech.style.width = "60%";
-    bgTech.style.transition = "all 0.5s ease-in"; 
+    bgTech.style.transition = "all 0.2s ease-in"; 
     bgTech.style.zIndex = "11";  
     menuTech.style.height = "55vh"; 
     menuTech.style.width = "64.3%";
-    menuTech.style.transition = "all 0.5s ease-in"; 
+    menuTech.style.transition = "all 0.2s ease-in 0.2s"; 
     bgLo.style.filter =  "grayscale(200%)";
+    techText.style.display = "block";
+    techText.style.opacity = "1";
+    techText.style.transition = "all 0.5s ease-in";
 });
 
 rightSide.addEventListener("mouseleave", function(e) {
@@ -45,6 +58,9 @@ rightSide.addEventListener("mouseleave", function(e) {
     menuTech.style.width = "50%";
     menuTech.style.transition = "all 0.5s ease-in"; 
     bgLo.style.filter =  "grayscale(0%)";
+    techText.style.display = "none";
+    techText.style.opacity = "0";
+    techText.style.transition = "all 0.5s ease-in";
 });
 /*
 menuLo.addEventListener("mousemove", function(e) {
