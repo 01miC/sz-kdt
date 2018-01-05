@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,800");
 * {
   box-sizing: border-box;
+  font-family: 'Roboto';
+  font-weight: 400;
 }
 
 body {
@@ -9,7 +12,11 @@ body {
 }
 
 .container-fluid {
-  height: 100vh;
+  width: 100%;
+}
+
+.bg-white {
+  background-color: #fff;
 }
 
 .bg-lo {
@@ -25,7 +32,7 @@ body {
 }
 
 .bg-tech {
-  background: url("https://images.pexels.com/photos/7374/startup-photos.jpg");
+  background: url(../images/start-right.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -65,6 +72,7 @@ body {
 
 .navi .navi-tech {
   float: right;
+  margin-right: 10%;
 }
 
 .navi .navi-tech h2 {
@@ -115,4 +123,278 @@ body {
   right: 0px;
   height: 100%;
   z-index: 99;
+}
+
+.loText {
+  display: hidden;
+  opacity: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.loText ul li {
+  padding: 15px;
+  font-family: 'Roboto';
+  font-weight: 100;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.loText ul :first-child {
+  font-weight: 500;
+}
+
+.techText {
+  display: hidden;
+  opacity: 0;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 80px;
+  right: -20%;
+}
+
+.techText p {
+  padding: 20px;
+  font-family: 'Roboto';
+  font-weight: 100;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.techText button {
+  margin-top: 15px;
+}
+
+h6 {
+  font-family: 'Roboto';
+  font-weight: 200;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: 'Raleway';
+  font-weight: 800 !important;
+  text-transform: uppercase;
+}
+
+.transparent {
+  background-color: transparent;
+  padding: 0;
+}
+
+.navbar-brand img {
+  position: absolute;
+  top: 5px;
+  left: 110px;
+  max-height: 120px;
+  z-index: 99;
+  margin-left: 150px;
+  border-radius: 50%;
+  box-shadow: 0px 6px 1px 0px rgba(0, 0, 0, 0.17);
+}
+
+.nav-item:hover {
+  background-color: rgba(0, 21, 112, 0.062);
+}
+
+.menu-margin-right {
+  margin-right: 50px;
+}
+
+.jumbotron {
+  padding: 0;
+  margin: 0;
+  background: url(../images/jumbo_bg.png) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.jumbotron-content {
+  width: 55%;
+  height: 100vh;
+  font-family: 'Roboto';
+  padding-right: 70px;
+}
+
+.jumbotron-content button {
+  border: 5px solid #1b325d;
+  background: transparent;
+  padding: 5px 30px;
+  font-family: 'Raleway';
+  font-weight: 800;
+  color: #1b325d;
+  cursor: pointer;
+}
+
+.jumbotron-content button:hover {
+  background-color: #1b325d;
+  color: #fff;
+  transition: all 0.1s ease-in-out;
+}
+
+.jumbotron-content button:active {
+  border: 4px solid #1b325d;
+  margin-left: 1px;
+}
+
+.bg-light {
+  background-color: #fcfcfc;
+}
+
+.rekrutacjacontent {
+  max-width: 70%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.rekrutacjacontent h6 {
+  padding-top: 200px;
+}
+
+.rekrutacjacontent .rekrutacjaimage-right {
+  width: 50%;
+  height: 450px;
+  background: url(../images/rekrutacjaright_main.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  top: 40%;
+  right: 0;
+}
+
+.rekrutacjacontent .rekrutacjaimage-left {
+  width: 50%;
+  height: 450px;
+  background: url(../images/rekrutacjaleft_main.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  top: 120%;
+  left: 0;
+}
+
+.rekrutacjacontent p {
+  width: 50%;
+  margin-top: 270px;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+}
+
+.rekrutacjacontent p button {
+  width: 60%;
+  margin-top: 20px;
+  border: 5px solid red;
+  background: transparent;
+  padding: 5px 30px;
+  font-family: 'Raleway';
+  font-weight: 800;
+  color: red;
+  cursor: pointer;
+}
+
+.rekrutacjacontent p button:hover {
+  background-color: red;
+  color: #fff;
+  transition: all 0.1s ease-in-out;
+}
+
+.rekrutacjacontent p button:active {
+  border: 4px solid red;
+  margin-left: 1px;
+}
+
+.videocontainer {
+  max-width: 70%;
+  margin: 150px auto;
+}
+
+.videocontainer iframe {
+  width: 100%;
+  height: 80vh;
+}
+
+.partners {
+  margin: 50px 0;
+  padding: 20px;
+}
+
+.partners .row .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.partners .row .col h5 {
+  padding-top: 10px;
+}
+
+.partners .row .col h5 small {
+  font-weight: 300;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 50px 0 50px;
+  letter-spacing: 1px;
+  height: 400px;
+  background-color: #e4e4e4;
+}
+
+.footer .row > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .row > * p {
+  padding: 20px 20px;
+}
+
+.footer .copy {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.footer .copy span {
+  font-size: 0.6rem;
+}
+
+.h100 {
+  height: 100vh;
 }
