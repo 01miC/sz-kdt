@@ -330,25 +330,13 @@
     
 }
 .footer {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    padding:50px 50px 0 50px;
     letter-spacing: 1px;
-    height:400px;
     background-color: #e4e4e4;
 
     .row {
-       
         >* {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            p {
-                padding:20px 20px;
-            }
+            padding:20px 20px;
+            
         }
     }
     .copy {
@@ -362,4 +350,87 @@
 
 .h100 {
      height:100vh;
+}
+
+// template styles 
+.temp {
+    padding:50px;
+}
+#header {
+    transition:all 0.8s ease-in;
+}
+.changethebg {
+    height:30%;
+    position:relative;
+    background-image:url(../images/bg-repeatlayer.png), url(../images/bg-repeatl2.jpg);
+      background-position: center bottom, 0% 13%;
+      background-size:100% 100%, 82%;
+      background-repeat: no-repeat, no-repeat;
+      >h1 {
+          text-transform: none;
+          position:absolute;
+          right:10%;
+          top:70%;
+      }
+}
+
+@media (min-width:1000px) and (max-width:1440px) {
+    .navbar-brand>img {
+        max-height:80px;
+        left:70px;
+        right:0;
+        margin-left:0;
+    }
+}
+
+@media (min-width:769px) and (max-width:999px) {
+    .navbar-brand {
+        line-height: 70px;
+            >img {
+            position:relative;
+            max-height:70px;
+            left:30px;
+            right:0;
+            top:0;
+            margin-left:0;
+        }
+    }
+    .navbar-toggler {
+        background-color:#fff;
+    }
+    .changethebg {
+        height:35%;
+        background-position: center bottom, 0% -10%;
+        background-size:100% 100%, 80%;
+    }
+}
+
+@media (max-width:768px) {
+    .navbar-brand {
+        line-height: 70px;
+            >img {
+            position:relative;
+            max-height:70px;
+            left:10px;
+            right:0;
+            top:0;
+            margin-left:0;
+        }
+    }
+    .navbar-toggler {
+        background-color:#fff;
+    }
+    .changethebg {
+        height:35%;
+        background-position: center bottom, 0% -10%;
+        background-size:cover, cover;
+    }
+    .logo-fix>img {
+        object-fit: cover;
+        margin-bottom:30px;
+    }
+    .footer {
+        text-align: center;
+
+    }
 }
