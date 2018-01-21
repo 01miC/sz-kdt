@@ -62,19 +62,3 @@ rightSide.addEventListener("mouseleave", function(e) {
     techText.style.opacity = "0";
     techText.style.transition = "all 0.5s ease-in";
 });
-/*
-menuLo.addEventListener("mousemove", function(e) {
-    bgLo.style.width = "60%";
-    bgLo.style.transition = "width 0.5s ease-in";   
-    menuLo.style.height = "55vh"; 
-    menuLo.style.width = "64.3%";
-    menuLo.style.transition = "height 0.5s ease-in, width 0.5s ease-in"; 
-});
-/*
-menuLo.addEventListener("mouseleave", function(e) {
-    bgLo.style.width = "50%";
-    bgLo.style.transition = "width 0.5s ease-in";   
-    menuLo.style.height = "100px"; 
-    menuLo.style.width = "50%";
-    menuLo.style.transition = "height 0.5s ease-in, width 0.5s ease-in"; 
-});*/

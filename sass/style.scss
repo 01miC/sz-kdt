@@ -6,6 +6,7 @@
      box-sizing: border-box;
      font-family: 'Roboto';
      font-weight: 400;
+     transition: all 0.2s linear;
  }
 
  body {
@@ -239,14 +240,15 @@
 
   }
 .bg-light {
-    background-color:rgb(252, 252, 252);
+    background-color:rgb(250, 250, 250);
 }
   .rekrutacjacontent {
       max-width:70%;
       margin:0 auto;
       position:relative;
+      height:100%;
       h6 {
-          padding-top:200px;
+          padding-top:100px;
       }
       .rekrutacjaimage-right {
           width:50%;
@@ -254,9 +256,7 @@
           background:url(../images/rekrutacjaright_main.jpg) no-repeat;
           background-position: center center;
           background-size:cover;
-          position:absolute;
-          top:40%;
-          right:0;
+          margin-top:-70px;
       }
       .rekrutacjaimage-left {
         width:50%;
@@ -264,14 +264,12 @@
         background:url(../images/rekrutacjaleft_main.jpg) no-repeat;
         background-position: center center;
         background-size:cover;
-        position:absolute;
-        top:120%;
-        left:0;
+        margin-top:100px;
       }
       p {
         width:50%;
-        margin-top:270px;
         padding: 10px 30px;
+        margin-top:-130px;
         font-size:1.2rem;
         button {
             width:60%;
@@ -299,10 +297,12 @@
 
 .videocontainer {
     max-width:70%;
-    margin:150px auto;
+    
+    margin:300px auto 0 auto;
+    padding:100px 0;
     iframe {
         width:100%;
-        height:80vh;
+        height:80%;
         
     }
 }
@@ -331,12 +331,10 @@
 }
 .footer {
     letter-spacing: 1px;
-    background-color: #e4e4e4;
-
+    background-color: #e4e4e4;  
     .row {
         >* {
-            padding:20px 20px;
-            
+            padding:20px 20px;   
         }
     }
     .copy {
@@ -347,6 +345,7 @@
         }
     }
 }
+
 
 .h100 {
      height:100vh;
@@ -373,15 +372,82 @@
           top:70%;
       }
 }
-
-@media (min-width:1000px) and (max-width:1440px) {
+@media (min-width:1200px) and (max-width:1440px) {
     .navbar-brand>img {
-        max-height:80px;
+        max-height:100px;
+        left:120px;
+        right:0;
+        margin-left:0;
+    }
+
+
+    .navi-lo h2 {
+        padding-left:10px;
+        font-size:1.4px;
+    }
+    .display-1 {
+        font-size:5em;
+    }
+    .jumbotron {
+        background-position: 0% center;
+        .jumbotron-content {
+            width:45%;
+            padding-right:0;
+        }
+    }
+    .display-4 {
+        font-size:2.8em;
+    }
+    .display-6 {
+        padding-top:50px !important;
+    }
+}
+
+
+@media (min-width:1000px) and (max-width:1199px) {
+    .navbar-brand>img {
+        max-height:100px;
         left:70px;
         right:0;
         margin-left:0;
     }
+    .display-1 {
+        font-size:3em;
+    }
+    .jumbotron {
+        background-position: 15% center;
+        .jumbotron-content {
+            width:45%;
+            padding-right:0;
+        }
+    }
+    .rekrutacjacontent p {
+        float:none !important;
+        width:100%;
+        margin:50px 0;
+    }
+
+    .videocontainer {
+        margin: 350px auto 0 auto;
+    }
+    .display-4 {
+        padding-top:0;
+        font-size:2.5em;
+    }
+    .display-6 {
+        padding-top:0;
+    }
+    .footer {
+        position:relative;
+        img {
+            position:absolute;
+            top:-20%;
+            //height:100px;
+        }
+    }
 }
+
+
 
 @media (min-width:769px) and (max-width:999px) {
     .navbar-brand {
@@ -395,6 +461,39 @@
             margin-left:0;
         }
     }
+    .display-1 {
+        font-size:2em;
+    }
+
+    .jumbotron {
+        background-position: 25% center;
+        .jumbotron-content {
+            width:45%;
+            padding-right:0;
+        }
+    }
+    .rekrutacjacontent p {
+        float:none !important;
+        width:100%;
+        margin:50px 0;
+        button {
+        padding:0;
+        }
+    }
+    .videocontainer {
+        margin: 350px auto 0 auto;
+    }
+    .display-4 {
+        font-size:1.7em;
+    }
+    .footer {
+        position:relative;
+        img {
+            position:absolute;
+            top:-20%;
+            //height:100px;
+        }
+    }
     .navbar-toggler {
         background-color:#fff;
     }
@@ -402,6 +501,10 @@
         height:35%;
         background-position: center bottom, 0% -10%;
         background-size:100% 100%, 80%;
+    }
+
+    .navbar-toggler {
+        margin-top:20px;
     }
 }
 
@@ -425,12 +528,106 @@
         background-position: center bottom, 0% -10%;
         background-size:cover, cover;
     }
+    .rekrutacjacontent p {
+        float:none !important;
+        width:100%;
+        margin:50px 0;
+        button {
+        padding:0;
+        }
+    }
+    .videocontainer {
+        margin: 400px auto 0 auto;
+    }
     .logo-fix>img {
         object-fit: cover;
         margin-bottom:30px;
+        
     }
     .footer {
         text-align: center;
 
+    }
+    .display-1 {
+        font-size:1.8em;
+    }
+    .display-4 {
+        font-size:1.5em;
+    }
+    .display-6 {
+        padding-top:0;
+    }
+    .navbar-toggler {
+        margin-top:20px;
+    }
+}
+@media (max-width:650px) {
+    .navbar-brand {
+        line-height: 70px;
+            >img {
+            position:relative;
+            max-height:70px;
+            left:10px;
+            right:0;
+            top:0;
+            margin-left:0;
+        }
+    }
+    .navbar-toggler {
+        background-color:#fff;
+    }
+    .changethebg {
+        height:35%;
+        background-position: center bottom, 0% -10%;
+        background-size:cover, cover;
+    }
+    .rekrutacjacontent {
+        max-width: 100%;
+        p {
+            float:none !important;
+            width:100%;
+            margin:50px 0;
+            padding:0;
+            button {
+            padding:0;
+            }
+        }
+    }
+    .jumbotron {
+        background-position: 35% center;
+        .jumbotron-content {
+            width:60%;
+            padding-right:10px;
+        }
+    }
+    .videocontainer {
+        margin: 450px auto 0 auto;
+        max-width:95%;
+    }
+    .logo-fix>img {
+        object-fit: cover;
+        margin-bottom:30px;
+        
+    }
+    .footer {
+        text-align: center;
+
+    }
+    .display-1 {
+        font-size:1.5em;
+    }
+    .display-4 {
+        font-size:1.2em;
+    }
+    .display-5 {
+        font-size:0.7em;
+        margin-top:50px;
+    }
+    .display-6 {
+        font-size:0.7em;
+        padding-top:0;
+    }
+    .navbar-toggler {
+        margin-top:20px;
     }
 }
