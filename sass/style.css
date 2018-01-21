@@ -389,9 +389,16 @@ h1 {
     right: 0;
     margin-left: 0;
   }
-  .navi-lo > h2 {
+  .navi .navi-lo {
+    line-height: 30px;
+  }
+  .navi .navi-lo h2 {
+    font-size: 1em;
     padding-left: 10px;
-    font-size: 1.4px;
+    line-height: 30px;
+  }
+  .navi .navi-lo li {
+    padding: 0;
   }
   .display-1 {
     font-size: 5em;
@@ -420,6 +427,16 @@ h1 {
   }
   .display-1 {
     font-size: 3em;
+  }
+  .navi .navi-lo {
+    line-height: 20px;
+  }
+  .navi .navi-lo h2 {
+    padding-left: 10px;
+    font-size: 1.4em;
+  }
+  .navi .navi-tech h2 {
+    padding-right: 0;
   }
   .jumbotron {
     background-position: 15% center;

@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: 'Roboto';
   font-weight: 400;
+  transition: all 0.2s linear;
 }
 
 body {
@@ -241,17 +242,18 @@ h1 {
 }
 
 .bg-light {
-  background-color: #fcfcfc;
+  background-color: #fafafa;
 }
 
 .rekrutacjacontent {
   max-width: 70%;
   margin: 0 auto;
   position: relative;
+  height: 100%;
 }
 
 .rekrutacjacontent h6 {
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
 .rekrutacjacontent .rekrutacjaimage-right {
@@ -260,9 +262,7 @@ h1 {
   background: url(../images/rekrutacjaright_main.jpg) no-repeat;
   background-position: center center;
   background-size: cover;
-  position: absolute;
-  top: 40%;
-  right: 0;
+  margin-top: -70px;
 }
 
 .rekrutacjacontent .rekrutacjaimage-left {
@@ -271,15 +271,13 @@ h1 {
   background: url(../images/rekrutacjaleft_main.jpg) no-repeat;
   background-position: center center;
   background-size: cover;
-  position: absolute;
-  top: 120%;
-  left: 0;
+  margin-top: 100px;
 }
 
 .rekrutacjacontent p {
   width: 50%;
-  margin-top: 270px;
   padding: 10px 30px;
+  margin-top: -130px;
   font-size: 1.2rem;
 }
 
@@ -308,12 +306,13 @@ h1 {
 
 .videocontainer {
   max-width: 70%;
-  margin: 150px auto;
+  margin: 300px auto 0 auto;
+  padding: 100px 0;
 }
 
 .videocontainer iframe {
   width: 100%;
-  height: 80vh;
+  height: 80%;
 }
 
 .partners {
@@ -348,41 +347,11 @@ h1 {
 }
 
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 50px 50px 0 50px;
   letter-spacing: 1px;
-  height: 400px;
   background-color: #e4e4e4;
 }
 
 .footer .row > * {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.footer .row > * p {
   padding: 20px 20px;
 }
 
@@ -397,4 +366,294 @@ h1 {
 
 .h100 {
   height: 100vh;
+}
+
+.temp {
+  padding: 50px;
+}
+
+#header {
+  transition: all 0.8s ease-in;
+}
+
+.changethebg {
+  height: 30%;
+  position: relative;
+  background-image: url(../images/bg-repeatlayer.png), url(../images/bg-repeatl2.jpg);
+  background-position: center bottom, 0% 13%;
+  background-size: 100% 100%, 82%;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.changethebg > h1 {
+  text-transform: none;
+  position: absolute;
+  right: 10%;
+  top: 70%;
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .navbar-brand > img {
+    max-height: 100px;
+    left: 120px;
+    right: 0;
+    margin-left: 0;
+  }
+  .navi .navi-lo {
+    line-height: 30px;
+  }
+  .navi .navi-lo h2 {
+    font-size: 1em;
+    padding-left: 10px;
+    line-height: 30px;
+  }
+  .navi .navi-lo li {
+    padding: 0;
+  }
+  .display-1 {
+    font-size: 5em;
+  }
+  .jumbotron {
+    background-position: 0% center;
+  }
+  .jumbotron .jumbotron-content {
+    width: 45%;
+    padding-right: 0;
+  }
+  .display-4 {
+    font-size: 2.8em;
+  }
+  .display-6 {
+    padding-top: 50px !important;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1199px) {
+  .navbar-brand > img {
+    max-height: 100px;
+    left: 70px;
+    right: 0;
+    margin-left: 0;
+  }
+  .display-1 {
+    font-size: 3em;
+  }
+  .navi .navi-lo {
+    line-height: 20px;
+  }
+  .navi .navi-lo h2 {
+    padding-left: 10px;
+    font-size: 1.4em;
+  }
+  .navi .navi-tech h2 {
+    padding-right: 0;
+  }
+  .jumbotron {
+    background-position: 15% center;
+  }
+  .jumbotron .jumbotron-content {
+    width: 45%;
+    padding-right: 0;
+  }
+  .rekrutacjacontent p {
+    float: none !important;
+    width: 100%;
+    margin: 50px 0;
+  }
+  .videocontainer {
+    margin: 350px auto 0 auto;
+  }
+  .display-4 {
+    padding-top: 0;
+    font-size: 2.5em;
+  }
+  .display-6 {
+    padding-top: 0;
+  }
+  .footer {
+    position: relative;
+  }
+  .footer img {
+    position: absolute;
+    top: -20%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 999px) {
+  .navbar-brand {
+    line-height: 70px;
+  }
+  .navbar-brand > img {
+    position: relative;
+    max-height: 70px;
+    left: 30px;
+    right: 0;
+    top: 0;
+    margin-left: 0;
+  }
+  .display-1 {
+    font-size: 2em;
+  }
+  .jumbotron {
+    background-position: 25% center;
+  }
+  .jumbotron .jumbotron-content {
+    width: 45%;
+    padding-right: 0;
+  }
+  .rekrutacjacontent p {
+    float: none !important;
+    width: 100%;
+    margin: 50px 0;
+  }
+  .rekrutacjacontent p button {
+    padding: 0;
+  }
+  .videocontainer {
+    margin: 350px auto 0 auto;
+  }
+  .display-4 {
+    font-size: 1.7em;
+  }
+  .footer {
+    position: relative;
+  }
+  .footer img {
+    position: absolute;
+    top: -20%;
+  }
+  .navbar-toggler {
+    background-color: #fff;
+  }
+  .changethebg {
+    height: 35%;
+    background-position: center bottom, 0% -10%;
+    background-size: 100% 100%, 80%;
+  }
+  .navbar-toggler {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    line-height: 70px;
+  }
+  .navbar-brand > img {
+    position: relative;
+    max-height: 70px;
+    left: 10px;
+    right: 0;
+    top: 0;
+    margin-left: 0;
+  }
+  .navbar-toggler {
+    background-color: #fff;
+  }
+  .changethebg {
+    height: 35%;
+    background-position: center bottom, 0% -10%;
+    background-size: cover, cover;
+  }
+  .rekrutacjacontent p {
+    float: none !important;
+    width: 100%;
+    margin: 50px 0;
+  }
+  .rekrutacjacontent p button {
+    padding: 0;
+  }
+  .videocontainer {
+    margin: 400px auto 0 auto;
+  }
+  .logo-fix > img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-bottom: 30px;
+  }
+  .footer {
+    text-align: center;
+  }
+  .display-1 {
+    font-size: 1.8em;
+  }
+  .display-4 {
+    font-size: 1.5em;
+  }
+  .display-6 {
+    padding-top: 0;
+  }
+  .navbar-toggler {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .navbar-brand {
+    line-height: 70px;
+  }
+  .navbar-brand > img {
+    position: relative;
+    max-height: 70px;
+    left: 10px;
+    right: 0;
+    top: 0;
+    margin-left: 0;
+  }
+  .navbar-toggler {
+    background-color: #fff;
+  }
+  .changethebg {
+    height: 35%;
+    background-position: center bottom, 0% -10%;
+    background-size: cover, cover;
+  }
+  .rekrutacjacontent {
+    max-width: 100%;
+  }
+  .rekrutacjacontent p {
+    float: none !important;
+    width: 100%;
+    margin: 50px 0;
+    padding: 0;
+  }
+  .rekrutacjacontent p button {
+    padding: 0;
+  }
+  .jumbotron {
+    background-position: 35% center;
+  }
+  .jumbotron .jumbotron-content {
+    width: 60%;
+    padding-right: 10px;
+  }
+  .videocontainer {
+    margin: 450px auto 0 auto;
+    max-width: 95%;
+  }
+  .logo-fix > img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    margin-bottom: 30px;
+  }
+  .footer {
+    text-align: center;
+  }
+  .display-1 {
+    font-size: 1.5em;
+  }
+  .display-4 {
+    font-size: 1.2em;
+  }
+  .display-5 {
+    font-size: 0.7em;
+    margin-top: 50px;
+  }
+  .display-6 {
+    font-size: 0.7em;
+    padding-top: 0;
+  }
+  .navbar-toggler {
+    margin-top: 20px;
+  }
 }
